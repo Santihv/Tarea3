@@ -30,3 +30,11 @@ y el modelo que mejor se ajusta a los valores de Y sería
 Dado que las funciones marginales son independientes aplica la siguiente relación
 
 <img src="https://render.githubusercontent.com/render/math?math=f_{X,Y}(x,y) = f_X(x) \cdot f_Y(y)">
+
+Por lo que la función de densidad conjunta sería
+
+<img src="https://render.githubusercontent.com/render/math?math=f_{X,Y}(x,y)=\frac{1}{2 \pi \sigma_x \sigma_y} \cdot e^{\left(\frac{-(x-\mu_x)^2}{2 {\sigma_x}^2} -\frac{(y-\mu_y)^2}{2 {\sigma_y}^2}\right)}">
+
+Y al sustituir los parámetros se tiene la siguiente función de densidad conjunta:
+
+<img src="https://render.githubusercontent.com/render/math?math=f_{X,Y}(x,y)=\frac{1}{2 \pi \cdot 90,88297215} \cdot e^{\left(\frac{-(x- 9,9048438)^2}{454,7802821} -\frac{(y- 3,3299442875)^2}{72,64795728}\right)}">
