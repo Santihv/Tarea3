@@ -46,7 +46,27 @@ Y al sustituir los parámetros se tiene la siguiente función de densidad conjun
 
 ## 3) Hallar los valores de correlación, covarianza y coeficiente de correlación (Pearson) para los datos y explicar su significado.
 
+La correlación es el momento de segundo orden *E[XY]* y se puede interpretar como el grado en el cual dos o más cantidades se encuentran relacionadas, aunque siempre con la consideración que correlación no implica causalidad. La correlación aplicada a valores discretos como los datos proporcionados se obtiene mediante la siguiente ecuación:
 
+<img src="https://render.githubusercontent.com/render/math?math=R_{XY}=\displaystyle\sum_{i=5}^{15}\displaystyle\sum_{j=5}^{25} x_i y_j P(x_i,y_j)">
+
+de la que se obtiene **RXY = 149,54281**. Ante este resultado se comprueba que X y Y no están correlacionadas ya que, al ser independientes como se asumió en la primera parte, se cumple la siguiente condición:
+
+<img src="https://render.githubusercontent.com/render/math?math=R_{XY} = E\left[ X \right] E\left[ Y \right]">
+
+de la que se obtiene **RXY = 149,359705**.
+
+La covarianza es el momento conjunto de segundo orden que cuantifica, como indica su nombre, la variación conjunta de dos variables aleatorias respecto de sus medias, por lo que se obtiene de la diferencia entre la correlación y el producto de los valores esperados de cada VA:
+
+<img src="https://render.githubusercontent.com/render/math?math=C_{XY} = R_{XY} - E\left[ X \right] E\left[ Y \right]">
+
+para el que se obtuvo un valor de **CXY = 0,183105**, el cual es cercano a 0 debido a que X y Y son independientes y, por lo tanto, no correlacionadas.
+
+El coeficiente de correlación o de Pearson es el momento de segundo orden normalizado e indica la dependencia lineal entre dos variables independientemente de la escala de ambas. Este valor va entre -1 y 1 y se obtiene con la siguiente relación:
+
+<img src="https://render.githubusercontent.com/render/math?math=\rho = \frac{C_{XY}}{\sigma_x \sigma_y}">
+
+que para los valores en cuestión sería **Ro = 0,00920795**, también cercano a cero porque la covarianza es cero teóricamente al ser X y Y independientes.
 
 ## 4) Graficar las funciones de densidad marginales (2D), la función de densidad conjunta (3D).
 
