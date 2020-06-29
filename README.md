@@ -1,5 +1,8 @@
 # Tarea3: Variables aleatorias múltiples
-## 1) A partir de los datos, encontrar la mejor curva de ajuste (modelo probabilístico) para las funciones de densidad marginales de X y Y.
+
+## Santiago Hernández Vargas B73737
+
+### 1) A partir de los datos, encontrar la mejor curva de ajuste (modelo probabilístico) para las funciones de densidad marginales de X y Y.
 
 Dado que se cuenta con un conjunto discreto de datos, la función de densidad marginal de cada variable aleatoria vendría dada por
 
@@ -30,7 +33,7 @@ y el modelo que mejor se ajusta a los valores de Y sería
 
 <img src="https://render.githubusercontent.com/render/math?math=f_Y(y)=\frac{1}{\sqrt{2 \pi \cdot (6,02693775)^2}} \cdot e^{\left(\frac{-(y-15,0794609)^2}{2 \cdot (6,02693775)^2}\right)}">
 
-## 2) Asumir independencia de X y Y, ¿cuál es entonces la función de densidad conjunta que modela los datos?
+### 2) Asumir independencia de X y Y, ¿cuál es entonces la función de densidad conjunta que modela los datos?
 
 Dado que las funciones marginales son independientes aplica la siguiente relación
 
@@ -44,7 +47,7 @@ Y al sustituir los parámetros se tiene la siguiente función de densidad conjun
 
 <img src="https://render.githubusercontent.com/render/math?math=f_{X,Y}(x,y)=\frac{1}{2 \pi \cdot 90,88297215} \cdot e^{\left(\frac{-(x- 9,9048438)^2}{454,7802821} -\frac{(y- 3,3299442875)^2}{72,64795728}\right)}">
 
-## 3) Hallar los valores de correlación, covarianza y coeficiente de correlación (Pearson) para los datos y explicar su significado.
+### 3) Hallar los valores de correlación, covarianza y coeficiente de correlación (Pearson) para los datos y explicar su significado.
 
 La correlación es el momento de segundo orden *E[XY]* y se puede interpretar como el grado en el cual dos o más cantidades se encuentran relacionadas, aunque siempre con la consideración que correlación no implica causalidad. La correlación aplicada a valores discretos como los datos proporcionados se obtiene mediante la siguiente ecuación:
 
@@ -68,15 +71,18 @@ El coeficiente de correlación o de Pearson es el momento de segundo orden norma
 
 que para los valores en cuestión sería **Ro = 0,00920795**, también cercano a cero porque la covarianza es cero teóricamente al ser X y Y independientes.
 
-## 4) Graficar las funciones de densidad marginales (2D), la función de densidad conjunta (3D).
+### 4) Graficar las funciones de densidad marginales (2D), la función de densidad conjunta (3D).
 
 A partir de los modelos obtenidos en la primera parte para las funciones de densidad marginales se obtuvieron los siguientes gráficos
-Para fX(x):
+Para *fX(x)*:
 
 ![Gráfico de la función de densidad marginal de X](https://github.com/Santihv/Tarea3/blob/master/fX.png)
 
-Para fY(y):
+Para *fY(y)*:
 
 ![Gráfico de la función de densidad marginal de Y](https://github.com/Santihv/Tarea3/blob/master/fY.png)
 
+El gráfico en 3D de la función conjunta *fXY(x,y)* obtenida en la segunda parte sería:
+
+![Gráfico de la función de densidad marginal de Y](https://github.com/Santihv/Tarea3/blob/master/fXY.png)
 
